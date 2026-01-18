@@ -89,8 +89,8 @@ export function Footer() {
                             <h4 className="text-xs font-bold uppercase tracking-[0.3em] text-muted-foreground">
                                 Strategic Partners & Oversight
                             </h4>
-                            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-16">
-                                <div className="relative h-14 w-40 grayscale hover:grayscale-0 transition-all duration-500">
+                            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-12">
+                                <div className="relative h-20 w-48 grayscale hover:grayscale-0 transition-all duration-500">
                                     <Image
                                         src="/Ministry_of_tourism.jpg"
                                         alt="Ministry of Tourism"
@@ -98,7 +98,7 @@ export function Footer() {
                                         className="object-contain"
                                     />
                                 </div>
-                                <div className="relative h-10 w-44 grayscale hover:grayscale-0 transition-all duration-500">
+                                <div className="relative h-16 w-16 grayscale hover:grayscale-0 transition-all duration-500">
                                     <Image
                                         src="/Sabbaq_Full_Logo.png"
                                         alt="SabbaqBDC"
@@ -106,7 +106,7 @@ export function Footer() {
                                         className="object-contain"
                                     />
                                 </div>
-                                <div className="relative h-10 w-36 grayscale hover:grayscale-0 transition-all duration-500">
+                                <div className="relative h-16 w-16 grayscale hover:grayscale-0 transition-all duration-500">
                                     <Image
                                         src="/horus-bdc-logo.png"
                                         alt="HorusBDC"

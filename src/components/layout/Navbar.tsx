@@ -26,7 +26,7 @@ export function Navbar() {
 
     const navItems = mode === "tourist" ? [
         { name: "Explore", href: "/", icon: Landmark },
-        { name: "Marketplace", href: "/marketplace", icon: ShoppingBag },
+        { name: "Treasures", href: "/marketplace", icon: ShoppingBag },
         { name: "Guardian", href: "/guardian", icon: Shield },
         { name: "Experience Egypt", href: "https://www.experienceegypt.eg/en", icon: ExternalLink, external: true },
     ] : [
@@ -44,15 +44,15 @@ export function Navbar() {
             {/* Top Partner Bar (Optional but good for branding) */}
             <div className={cn(
                 "max-w-7xl mx-auto flex justify-end items-center mb-2 overflow-hidden transition-all duration-500",
-                isScrolled ? "h-0 opacity-0" : "h-6 opacity-100"
+                isScrolled ? "h-0 opacity-0" : "h-12 opacity-100"
             )}>
                 <div className="flex items-center gap-3">
                     <span className="text-[9px] uppercase tracking-[0.2em] text-muted-foreground">This solution is powered by</span>
                     <div className="flex items-center gap-3 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
-                        <div className="relative w-16 h-4">
+                        <div className="relative h-10 w-10">
                             <Image src="/Sabbaq_Full_Logo.png" alt="Sabbaq" fill className="object-contain" />
                         </div>
-                        <div className="relative w-14 h-4">
+                        <div className="relative h-10 w-10">
                             <Image src="/horus-bdc-logo.png" alt="Horus" fill className="object-contain" />
                         </div>
                     </div>
