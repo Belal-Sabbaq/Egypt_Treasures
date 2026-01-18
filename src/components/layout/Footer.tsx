@@ -124,7 +124,7 @@ export function Footer() {
                             </div>
                             <div className="flex items-center gap-2 opacity-60 hover:opacity-100 transition-opacity">
                                 <Phone className="w-4 h-4 text-primary" />
-                                <span className="text-sm font-medium">+20 (0) 2 1234 5678</span>
+                                <span className="text-sm font-medium">+20 1119673999</span>
                             </div>
                         </div>
                     </div>
