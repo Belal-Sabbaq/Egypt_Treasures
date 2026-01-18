@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup, Circle, useMap } from "react-leaflet";
 import L from "leaflet";
-import "leaflet/dist/leaflet.css";
 
 // Fix for default marker icon in Leaflet + Next.js
 const DefaultIcon = L.icon({
@@ -35,17 +34,17 @@ export default function GuardianMap() {
     const siwaCenter: [number, number] = [29.203, 25.519];
 
     return (
-        <div className="flex-1 w-full min-h-[600px] lg:min-h-0 flex flex-col">
+        <div className="w-full h-full min-h-[600px] flex flex-col">
             <MapContainer
                 center={siwaCenter}
                 zoom={13}
-                style={{ height: "100%", minHeight: "600px", width: "100%", background: "#0a0a0a" }}
+                style={{ height: "100%", width: "100%", minHeight: "600px", background: "#f8fafc" }}
                 zoomControl={false}
             >
-                {/* Dark Matter / Tactical Map tiles */}
+                {/* Light Matter Map tiles for better visibility in light theme */}
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-                    url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+                    url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
                 />
 
                 {/* User Location */}
@@ -86,16 +85,17 @@ export default function GuardianMap() {
 
             <style jsx global>{`
         .leaflet-container {
-          filter: grayscale(1) invert(1) contrast(1.2) brightness(0.8);
+          width: 100%;
+          height: 100%;
         }
         .custom-popup .leaflet-popup-content-wrapper {
-          background: #FFD700;
-          color: black;
+          background: #C5A059;
+          color: white;
           border-radius: 12px;
-          font-family: var(--font-outfit);
+          font-family: var(--font-heading);
         }
         .custom-popup .leaflet-popup-tip {
-          background: #FFD700;
+          background: #C5A059;
         }
       `}</style>
         </div>

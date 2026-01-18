@@ -17,11 +17,13 @@ export default function Guardian() {
     return (
         <div className="relative min-h-screen w-full bg-slate-50 flex flex-col pt-24">
             {/* Map Layer - Takes up remaining viewport height */}
-            <div className="flex-1 relative h-[calc(100vh-96px)] overflow-hidden flex flex-col">
-                <GuardianMap />
+            <div className="flex-1 relative h-[calc(100vh-96px)] flex flex-col z-0 isolation-isolate">
+                <div className="absolute inset-0 z-0">
+                    <GuardianMap />
+                </div>
 
                 {/* Overlay UI */}
-                <div className="absolute inset-0 pointer-events-none z-10 flex flex-col justify-between p-12">
+                <div className="absolute inset-0 pointer-events-none z-30 flex flex-col justify-between p-12">
                     {/* Top Bar */}
                     <div className="flex justify-between items-start pointer-events-auto">
                         <div className="bg-white/90 backdrop-blur-xl p-8 rounded-[2.5rem] border border-slate-200/50 flex items-center gap-8 shadow-2xl shadow-slate-900/5">

@@ -12,8 +12,9 @@ import { usePlanner } from "@/context/PlannerContext";
 export function Navbar() {
     const pathname = usePathname();
     const [isScrolled, setIsScrolled] = useState(false);
-    const [mode, setMode] = useState<"tourist" | "investor">("tourist");
     const { items } = usePlanner();
+
+    const mode = (pathname?.startsWith("/investment") || pathname?.startsWith("/investor")) ? "investor" : "tourist";
 
     useEffect(() => {
         const handleScroll = () => {
@@ -113,27 +114,24 @@ export function Navbar() {
 
                     {/* Mode Switcher */}
                     <div className="hidden sm:flex items-center bg-slate-50 rounded-full p-1 border border-slate-200 shadow-sm">
-                        <button
-                            onClick={() => setMode("tourist")}
+                        <Link
+                            href="/"
                             className={cn(
                                 "px-3 py-1 rounded-full text-xs font-bold transition-all",
                                 mode === "tourist" ? "bg-primary text-white shadow-md" : "text-slate-500 hover:text-slate-900"
                             )}
                         >
                             Tourist
-                        </button>
-                        <button
-                            onClick={() => {
-                                setMode("investor");
-                                window.location.href = "/investment";
-                            }}
+                        </Link>
+                        <Link
+                            href="/investment"
                             className={cn(
                                 "px-3 py-1 rounded-full text-xs font-bold transition-all",
                                 mode === "investor" ? "bg-primary text-white shadow-md" : "text-slate-500 hover:text-slate-900"
                             )}
                         >
                             Investor
-                        </button>
+                        </Link>
                     </div>
 
                     <Link href="/profile" className="flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-full px-4 py-1.5 hover:bg-slate-800 transition-colors shadow-lg">

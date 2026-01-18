@@ -38,16 +38,16 @@ export const INVENTORY: Item[] = [
     location: 'Siwa',
     price: 350,
     rating: 4.9,
-    image: 'https://images.unsplash.com/photo-1549144511-f099e773c147?auto=format&fit=crop&q=80&w=800',
+    image: 'https://www.adrereamellal.com/adrere/wp-content/uploads/2019/08/adrere-amellal-eco-lodge-siwa.jpg',
     isGovAsset: false,
     isVerifiedPartner: true,
     coordinates: [29.203, 25.519],
     tags: ['luxury', 'eco', 'sustainable'],
     description: 'Experience timeless luxury in the heart of Siwa Oasis. Adrère Amellal is an eco-lodge built with traditional mud-brick techniques, offering an off-grid experience powered by starlight and candles.',
     gallery: [
-      'https://images.unsplash.com/photo-1549144511-f099e773c147?auto=format&fit=crop&q=80&w=800',
-      'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&q=80&w=800',
-      'https://images.unsplash.com/photo-1449034446853-66c86144b0ad?auto=format&fit=crop&q=80&w=800'
+      'https://www.adrereamellal.com/adrere/wp-content/uploads/2021/09/slider-adrere-night-in-siwa-oasis.jpg',
+      'https://www.adrereamellal.com/adrere/wp-content/uploads/2019/12/Adrere-amellal-siwa-lake-spa.jpg',
+      'https://www.adrereamellal.com/adrere/wp-content/uploads/2019/09/Adrere-amellal-siwa-oasis-eco-lodge-Omar-Hikal.jpg'
     ],
     bookingOptions: [
       {
@@ -79,15 +79,15 @@ export const INVENTORY: Item[] = [
     location: 'Siwa',
     price: 80,
     rating: 4.8,
-    image: 'https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&q=80&w=800',
+    image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/e2/8a/39/safari-trip.jpg?w=1200&h=-1&s=1',
     isGovAsset: false,
     isVerifiedPartner: true,
     coordinates: [29.1, 25.4],
     tags: ['adventure', 'safari', 'desert'],
     description: 'Venture into the vast dunes of the Great Sand Sea. Our professional desert drivers will take you on an adrenaline-fueled journey across the shifting sands, visiting ancient fossil sites and hidden cold springs.',
     gallery: [
-      'https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&q=80&w=800',
-      'https://images.unsplash.com/photo-1469033019747-ba489f664f3c?auto=format&fit=crop&q=80&w=800'
+      'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/10/7d/4a/a2.jpg',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfR0ItXMn5VmmIGQRNyKsu044aZHKv9LgCxA&s'
     ],
     bookingOptions: [
       {
@@ -109,15 +109,15 @@ export const INVENTORY: Item[] = [
     location: 'Cairo',
     price: 40,
     rating: 5.0,
-    image: 'https://images.unsplash.com/photo-1572252009286-268acec5ca0a?auto=format&fit=crop&q=80&w=800',
+    image: 'https://static.dezeen.com/uploads/2025/10/grand-egyptian-museum-heneghan-peng-architects-cultural-egypt-giza-architecture_dezeen_2364_hero.jpg',
     isGovAsset: true,
     isVerifiedPartner: true,
     coordinates: [30.0, 31.2],
     tags: ['GEM', 'history', 'official', 'visa'],
     description: 'Be among the first to explore the world’s largest archaeological museum. This VIP ticket grants you early access to the Grand Staircase, statutory collection, and the Tutankhamun gallery.',
     gallery: [
-      'https://images.unsplash.com/photo-1572252009286-268acec5ca0a?auto=format&fit=crop&q=80&w=800',
-      'https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&q=80&w=800'
+      'https://static.dezeen.com/uploads/2025/10/grand-egyptian-museum-heneghan-peng-architects-cultural-egypt-giza-architecture_dezeen_2364_hero.jpg',
+      'https://media.tacdn.com/media/attractions-splice-spp-674x446/11/1b/ea/09.jpg'
     ],
     bookingOptions: [
       {

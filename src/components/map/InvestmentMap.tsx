@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import { MapContainer, TileLayer, Circle, useMap } from "react-leaflet";
 import L from "leaflet";
-import "leaflet/dist/leaflet.css";
 
 function MapCenterUpdater({ center }: { center: [number, number] }) {
     const map = useMap();
@@ -57,7 +56,8 @@ export default function InvestmentMap() {
 
             <style jsx global>{`
         .leaflet-container {
-          filter: saturate(0.8) contrast(1.2);
+          width: 100%;
+          height: 100%;
         }
       `}</style>
         </div>

@@ -104,7 +104,7 @@ export default function Investment() {
                 </div>
 
                 {/* Map View */}
-                <div className="flex-1 relative bg-slate-100 min-h-[500px] lg:min-h-0 flex flex-col">
+                <div className="flex-1 relative bg-slate-100 min-h-[500px] lg:min-h-0 flex flex-col z-0 isolation-isolate">
                     <InvestmentMap />
 
                     {/* Map Controls Overlay */}

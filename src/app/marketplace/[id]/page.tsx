@@ -39,7 +39,7 @@ export default function ItemDetailsPage() {
 
     if (!item) {
         return (
-            <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center pt-24">
+            <div className="min-h-screen bg-white text-slate-900 flex flex-col items-center justify-center pt-24">
                 <h1 className="text-2xl font-bold mb-4">Treasure Not Found</h1>
                 <Link href="/marketplace" className="text-primary hover:underline">Return to Marketplace</Link>
             </div>
@@ -56,19 +56,19 @@ export default function ItemDetailsPage() {
 
     const getProviderColor = (type: string) => {
         switch (type) {
-            case 'DIRECT': return 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20';
-            case 'AGENCY': return 'text-amber-400 bg-amber-500/10 border-amber-500/20';
-            default: return 'text-blue-400 bg-blue-500/10 border-blue-500/20';
+            case 'DIRECT': return 'text-emerald-500 bg-emerald-50 border-emerald-100';
+            case 'AGENCY': return 'text-amber-500 bg-amber-50 border-amber-100';
+            default: return 'text-blue-500 bg-blue-50 border-blue-100';
         }
     };
 
     return (
-        <div className="min-h-screen bg-[#0a0a0b] text-white pt-24 pb-20">
+        <div className="min-h-screen bg-white text-slate-900 pt-24 pb-20">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Breadcrumbs */}
                 <Link
                     href="/marketplace"
-                    className="flex items-center gap-2 text-white/40 hover:text-primary transition-colors mb-8 group"
+                    className="flex items-center gap-2 text-slate-400 hover:text-primary transition-colors mb-8 group"
                 >
                     <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
                     <span className="text-sm font-semibold uppercase tracking-widest">Back to Marketplace</span>
@@ -81,7 +81,7 @@ export default function ItemDetailsPage() {
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                className="relative aspect-[16/9] rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-200 border border-slate-100"
+                                className="relative aspect-[16/9] rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-200/60 border border-slate-100"
                             >
                                 <img
                                     src={item.gallery?.[activeImage] || item.image}
@@ -90,7 +90,7 @@ export default function ItemDetailsPage() {
                                 />
                                 <div className="absolute top-6 left-6 flex gap-2">
                                     {item.isGovAsset && (
-                                        <div className="bg-primary text-white text-[10px] font-black px-4 py-2 rounded-full border border-white/20 shadow-xl backdrop-blur-md uppercase tracking-widest">
+                                        <div className="bg-primary text-white text-[10px] font-black px-4 py-2 rounded-full border border-white/10 shadow-xl backdrop-blur-md uppercase tracking-widest">
                                             Official Asset
                                         </div>
                                     )}
